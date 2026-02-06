@@ -189,7 +189,7 @@ export async function runHeavy(rawInput: RunHeavyOptions): Promise<HeavyFinal> {
       preset,
       maxInFlight,
       timeoutMs
-    }),
+    }) as Record<string, unknown>,
     agents: runs.map((run) => ({
       id: run.agent.id,
       role: run.agent.role,

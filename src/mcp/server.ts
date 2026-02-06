@@ -53,7 +53,7 @@ function parseContentLength(buffer: Buffer): { length: number; headerLength: num
 export function startServer(): void {
   let buffer = Buffer.alloc(0);
   const rl = createInterface({ input: process.stdin });
-  rl.on("line", (line) => {
+  rl.on("line", (line: string) => {
     buffer = Buffer.concat([buffer, Buffer.from(line + "\n", "utf8")]);
     while (true) {
       const headerInfo = parseContentLength(buffer);
