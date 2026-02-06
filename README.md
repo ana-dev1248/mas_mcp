@@ -1,4 +1,4 @@
-# MAS_Cline — Real MAS (Heavy Engine)
+# MAS_MCP — Real MAS (Heavy Engine)
 
 This repository implements **Real MAS (Heavy Engine)**: a single MCP tool call that triggers **4–12 real, parallel LLM API calls**, performs cross-evaluation, and returns a synthesized patch/test plan for vibe coding.
 
